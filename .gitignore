@@ -1,0 +1,36 @@
+# Ignore npm-debug.log files
+npm-debug.log*
+
+# Ignore log files
+log.txt
+
+# Ignore build files
+/build
+
+# Ignore dependency directories
+node_modules/
+
+# Ignore .env files
+.env*
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore environment specific files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore yarn error logs
+yarn-error.log
+
+# Ignore coverage directory
+/coverage
+
+# Ignore .vscode directory
+.vscode
+
+# Ignore .idea directory
+.idea

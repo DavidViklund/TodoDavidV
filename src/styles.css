@@ -1,0 +1,138 @@
+h1 {
+  font-family: "Libre Caslon Text", serif;
+}
+
+body {
+  text-align: center;
+  font-family: "Libre Caslon Text", serif;
+  background-color: #050406;
+  color: antiquewhite;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+a:hover {
+  color: red;
+  text-transform: capitalize;
+}
+
+.hero-section {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column; /* Ändra till kolumn för att centrerad innehållsjustering */
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  text-align: center;
+  align-self: center; /* Centrera innehållet horisontellt */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 25%; /* Placera texten vertikalt i mitten */
+  left: 50%; /* Placera texten horisontellt i mitten */
+  transform: translate(-50%, -50%); /* Justera positionen till centrum */
+  text-align: center; /* Centrera texten */
+  color: antiqueWhite; /* Justera textfärgen efter behov */
+  z-index: 1; /* Sätt z-index till ett högre värde för att texten ska vara över bilden */
+}
+
+.typo-image {
+  width: 100%; /* Sätt bilden att ta upp hela bredden av förälderelementet */
+  height: auto;
+}
+
+.hero-content {
+  position: relative;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 0rem;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #050406;
+}
+
+p {
+  color: #050406;
+}
+
+.typo-image {
+  width: 600px;
+  height: auto;
+  align-self: center; /* Centrera bilden horisontellt */
+  margin-top: 5rem;
+}
+
+.todo-container {
+  /* Stilar för todo-container */
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 5rem;
+  height: 600px;
+  width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin: 0 auto; /* Centrera rubriken horisontellt */
+  text-align: center; /* Centrera rubriken horisontellt */
+  letter-spacing: 3px;
+  padding-bottom: 2px;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-container input {
+  flex: 1; /* Input-fältet tar upp all tillgänglig flexibel plats */
+  margin-right: 10px; /* Mellanrum mellan input-fältet och knappen */
+}
+
+.input-container button {
+  flex-shrink: 0; /* Knappen kommer inte att krympas om det finns för mycket innehåll */
+  color: white;
+  background-color: #050406;
+  border-style: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.task-item {
+  /* Stilar för varje uppgiftslista */
+  display: flex;
+  align-items: center; /* Centrera innehållet vertikalt */
+  justify-content: space-between; /* Placera innehållet i mitten och knappen till höger */
+  margin-bottom: 10px;
+  padding: 0px;
+  color: #050406;
+  background-color: #f2f2f2;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.task-item button {
+  margin-left: 0px; /* Lägg till lite mellanrum mellan text och knapp */
+  color: white;
+  background-color: #050406;
+  border-style: none;
+  font-family: "Courier New", Courier, monospace;
+}
