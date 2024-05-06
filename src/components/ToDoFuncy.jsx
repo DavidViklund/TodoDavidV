@@ -1,21 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const ToDoFuncy = () => {
-  const [tasks, setTasks] = useState([]);
-  const [taskInput, setTaskInput] = useState("");
-
-  useEffect(() => {
-    // Hämta tasks från localStorage när komponenten renderas
+  const [tasks, setTasks] = useState(() => {
     const storedTasks = JSON.parse(localStorage.getItem("tasks"));
-    if (storedTasks) {
-      setTasks(storedTasks);
-    }
-  }, []);
-
-  useEffect(() => {
-    // Spara tasks till localStorage när tasks ändras
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
+    return storedTasks || [];
+  });
+  const [taskInput, setTaskInput] = useState("");
 
   const addTask = () => {
     if (taskInput.trim() !== "") {
@@ -28,6 +18,10 @@ const ToDoFuncy = () => {
     const newTasks = tasks.filter((_, i) => i !== index);
     setTasks(newTasks);
   };
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   return (
     <div className="todo-container">
